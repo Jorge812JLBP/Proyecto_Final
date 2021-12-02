@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Css/Style.css">
+    <title>Trabajo Final</title>
+</head>
+<body>
+    <aside>
+        <center>
+        <form method="post" action="http://localhost:1340/api/personas">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" ><br>
+            <label for="edad">Cantidad:</label><br>
+            <input type="text" id="cantidad" name="cantidad" ><br>
+            <label>Precio</label><br>
+            <input type="text" id="precio" name="precio"><br><br>
+            <input id="btnAdd" type="button" value="Enviar">
+            <input id="btnListar" type="button" value="Listar">
+            
+        </form>
+        <div id="resultados"></div>
+    </center>
+    </aside>
+    <main>
+        <center>
+        <select name="Seleccion" id="Seleccion">Usuarios</select><br>
+        <input type="number" id="cant"><br>
+        <input type="button" name="carrito" id="btnCarrito" value="Carrito">
+        <input type="button" name="Total" id="btnTotal" value="Total"><br>
+        <label>Venta Total<br><input type="text" id="venta" name="venta" ></label><br>
+        <label>IVA(16%)<br><input type="text" id="iva" name="iva" ></label><br>
+        <label>Monto total<br><input type="text" id="monto" name="monto" ></label><br>
+        <label>RFC<br><input type="text" id="rfc" name="rfc" ></label><br>
+        <label>Fecha<br><input type="date" id="fecha" name="fecha" ></label><br>
+        <input id="btnFactura" type="button" value="Factura">
+        <center>
+    </main>
+    <script src="Js/app.js"></script>       
+</body>
+</html>
